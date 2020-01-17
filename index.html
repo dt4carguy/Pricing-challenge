@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css"
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Pricing Component with Toggle</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  <h1>Our Pricing</h1>
-
-  <div class="toggle">
-  <h3>Annually</h3>
-  <h3>Monthly</h3>
+  <div class="top-image">
+    <img class="top-image" src="images/bg-top.svg" />
   </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+  <h1 class="heading">Our Pricing</h1>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+  <div class="toggle"> 
+    <label for="toggle1" class="annual">Annual</label>
+    <input id="toggle1" class="slider" type="checkbox"/>
+    <label for="toggle1" class="monthly">Monthly</label>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+  </div>
 
+  <div class="main">
+    <div class="basic">
+      <h3>Basic</h3>
+      <hr />
+      <h1>&dollar;19.99</h1>
+      <hr />
+      <h1>&dollar;199.99</h1>
+      <hr />
+      <h3>500 GB Storage</h3>
+      <hr />
+      <h3>2 Users Allowed</h3>
+      <hr />
+      <h3>Send up to 3 GB</h3>
+      <hr />
+      <button>Learn More</button>
+    </div>
+
+    <div class="professional">
+      <h3>Professional</h3>
+      <hr />
+      <h1>&dollar;24.99</h1>
+      <hr />
+      <h1>&dollar;249.99</h1>
+      <hr />
+      <h3>1 TB Storage</h3>
+      <hr />
+      <h3>5 Users Allowed</h3>
+      <hr />
+      <h3>Send up to 10 GB</h3>
+      <hr />
+      <button>Learn More</button>
+    </div>
+
+    <div class="master">
+      <h3>Master</h3>
+      <hr />
+      <h1>&dollar;39.99</h1>
+      <hr />
+      <h1>&dollar;399.99</h1>
+      <hr />
+      <h3>2 TB Storage</h3>
+      <hr />
+      <h3>10 Users Allowed</h3>
+      <hr />
+      <h3>Send up to 20 GB</h3>
+      <hr />
+      <button>Learn More</button>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">David Turner</a>.
   </div>
+
+  <div class="bottom-image">
+    <img class="bottom-image" src="images/bg-bottom.svg" />
+  </div>
+
 </body>
+
 </html>
